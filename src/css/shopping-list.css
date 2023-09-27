@@ -1,0 +1,461 @@
+.shopping__list__container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shopping__list__box {
+  width: 100%;
+}
+
+.shopping__list__container {
+  max-width: 335px;
+  padding: 0 15px;
+}
+
+.shopping__list__support {
+ margin-top: 40px;
+}
+
+.shopping__list__first__title {
+  color: var(--dark-theme-color);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.shopping__list__second__title {
+  color: var(--violet-color);
+}
+
+.shopping__list__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shopping__list__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 2px solid var(--transparent-violet);
+  background: var(--white-color);
+  box-sizing: border-box;
+}
+
+.shopping__list__btn__delete {
+  display: block;
+  position: absolute;
+  padding: 0;
+  background-color: var(--violet-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.shopping__list__book__title {
+  color: var(--dark-theme-color);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.shopping__list__category {
+  color: var(--light-gray-color);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.36px;
+}
+
+.shopping__list__description {
+  color: var(--dark-theme-color);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.56px;
+}
+
+.shopping__list__author {
+  color: var(--light-gray-color);
+  font-family: DM Sans;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: -0.48px;
+  position: absolute;
+  left: 164px;
+  bottom: 24px;
+}
+
+.shopping__list__link__list {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.35);
+}
+
+.shopping__list__placeholder {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping__list__placeholder__descriptions {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.delete__button {
+  background-image: url('../images/shopping-list/trash-03.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@media only screen and (min-width: 320px) {
+  .shopping__list__container {
+    padding: 0 5px;
+  }
+
+  .shopping__list__first__title {
+    margin-left: 10px;
+    font-size: 32px;
+    line-height: 1.19;
+    letter-spacing: -1.28px;
+  }
+
+  .shopping__list {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+  }
+
+  .shopping__list__item {
+    height: 170px;
+    padding: 12px 12px;
+  }
+  
+  .shopping__list__book__image {
+    width: 100px;
+    height: 142px;
+    border-radius: 8px;
+  }
+
+  .shopping__list__book__title {
+    max-width: 140px;
+    font-size: 14px;
+  }
+
+  .shopping__list__category{
+    max-width: 150px;
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+
+  .shopping__list__description {
+    font-size: 12px;
+    height: 42px;
+    overflow: hidden;
+  }
+
+  .shopping__list__author {
+    font-size: 10px;
+    width: 80px;
+    left: 128px;
+    bottom: 14px;
+  }
+
+  .shopping__list__btn__delete {
+    width: 28px;
+    height: 28px;
+    right: 14px;
+    top: 14px;
+  }
+
+  .shopping__list__link__list {
+    right: 14px;
+    bottom: 14px;
+    gap: 8px;
+  }
+
+  .shopping__list__link__images {
+    width: 16px;
+  }
+
+  .shopping__list__link__images.amazon {
+    width: 32px;
+  }
+
+  .delete__button {
+    width: 28px;
+    height: 28px;
+    background-size: 16px 16px;
+  }
+
+  .shopping__list__placeholder {
+    margin-top: 120px;
+    width: 266px;
+    height: 248px;
+  }
+
+  .shopping__list__placeholder__descriptions {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.28px;
+  }
+
+  .shopping__list__placeholder__images {
+    max-width: 266px;
+    max-height: 198px;
+  }
+
+}
+
+
+@media screen and (min-width: 346px) {
+  .shopping__list__book__title {
+    max-width: 160px;
+  font-size: 16px;
+  }
+
+  .shopping__list__category {
+    font-size: 12px;
+  }
+
+  .shopping__list__description {
+    height: 38px;
+    font-size: 14px;
+  }
+  .shopping__list__author {
+    width: 90px;
+    font-size: 12px;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  .shopping__list__container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .shopping__list{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .shopping__list__first__title {
+    margin-left: 0px;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -1.92px;
+  }
+
+  .shopping__list__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shopping__list__item {
+    height: 214px;
+    padding: 24px 24px;
+    gap: 24px;
+  }
+
+  .shopping__list__book__title {
+    max-width: 400px;
+  }
+
+  .shopping__list__book__image {
+    width: 116px;
+    height: 165px;
+  }
+
+  .shopping__list__category{
+    max-width: 400px;
+    margin-bottom: 14px;
+  }
+
+  .shopping__list__author {
+    left: 164px;
+    bottom: 30px;
+    width: 150px;
+  }
+
+
+  .shopping__list__btn__delete {
+    right: 24px;
+    top: 24px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .shopping__list__link__list {
+    right: 24px;
+    bottom: 24px;
+    gap: 16px;
+  }
+
+  .shopping__list__description {
+    min-height: 70px;
+  }
+
+  .shopping__list__link__images {
+    width: 32px;
+  }
+
+  .shopping__list__link__images.amazon {
+    width: 48px;
+  }
+
+  .delete__button {
+    min-width: 34px;
+    min-height: 34px;
+    background-size: 18px 18px;
+  }
+
+  .shopping__list__placeholder {
+    margin-top: 140px;
+    width: 350px;
+    height: 310px;
+  }
+
+  .shopping__list__placeholder__descriptions {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
+  }
+
+  .shopping__list__placeholder__images {
+    max-width: 320px;
+    max-height: 240px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .shopping__list__container {
+    max-width: 1440px; 
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .shopping__list {
+    max-width: 996px;
+    padding-left: 40px;
+    padding-right: 24px;
+  }
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination-list {
+  display: flex;
+  justify-content: center;
+}
+.numbers {
+  display: flex;
+}
+.page-item {
+  border-radius: 50%;
+  border: 1px solid var(--dark-theme-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.first-page,
+.prev-page {
+  background-color: var(--dark-theme-color);
+  color: var(--white-color);
+}
+.next-page,
+.last-page {
+  background-color: var(--yellow-color);
+}
+.last-page:hover,
+.next-page:hover {
+  transform: translateX(3px);
+}
+.first-page:hover,
+.prev-page:hover{
+  transform: translateX(-3px);
+}
+.disable{
+  color: var(--light-gray-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .pagination {
+    margin-top: 20px;
+    padding-bottom: 48px;
+  }
+  .numbers {
+    gap: 8px;
+    margin: 0 14px;
+  }
+  .first-page {
+    margin-right: 5px;
+  }
+  .next-page {
+    margin-right: 8px;
+  }
+  .current-page-3 {
+    visibility: hidden;
+  }
+  .page-item {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .pagination {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  .numbers {
+    gap: 10px;
+    margin: 0 24px;
+  }
+  .first-page {
+    margin-right: 8px;
+  }
+  .next-page {
+    margin-right: 8px;
+  }
+  .page-item {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.active-page-pag {
+  background-color: var(--dark-theme-color);
+  color: var(--white-color);
+}
